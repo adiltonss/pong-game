@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddle Soccer</title>
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="color-theme1">
+
+    <div class="end-game-board inactive-end-game-board">
+        <div class="whos-the-winner"></div>
+        <div class="end-actions">
+            <a href="#" class="try-again-btn">Try Again</a>
+            <a href="#" class="return-to-menu">Return to Menu</a>
+        </div>
+    </div>
+
+
+    <div class="start-menu">
+        <div class="title">
+            <h1>Pong Game</h1>
+        </div>
+        <ul class="options">
+            <li class="start-button li-btn" tabindex="1"><a href="#">Start</a></li>
+            <li class="game-time li-btn">
+                <a href="#" class="show-hide-time-options">Set Game Time</a>
+                <ul class="time-options timeOpt-inactive">
+                    <li>
+                        <div class="control-group">
+                            <label class="control control-radio">
+                                1 min
+                                    <input type="radio" name="time-amount-radio" value="1" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+
+                            <label class="control control-radio">
+                                2 min
+                                    <input type="radio" name="time-amount-radio" value="2" />
+                                <div class="control_indicator"></div>
+                            </label>
+                            
+                            <label class="control control-radio">
+                                3 min
+                                    <input type="radio" name="time-amount-radio" value="3" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown li-btn" tabindex="2">
+                <a href="#" class="start-dropdown">Change color theme</a>
+                <ul class="color-theme dropdown_menu menu-inactive">
+                        <li class="dropdown_item">Color: <div class="color-demo theme1"></div></li>
+                        <li class="dropdown_item">Color: <div class="color-demo theme2"></div></li>
+                        <li class="dropdown_item">Color: <div class="color-demo theme3"></div></li>
+                        <li class="dropdown_item">Color: <div class="color-demo theme4"></div></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="timer-display"></div>
+
+    <div class="score">
+        <div id="player-score">0</div>
+        <div id="cpu-score">0</div>
+    </div>
+    
+    <div class="left-paddle"></div>
+    <div class="right-paddle"></div>
+    <div class="ball"></div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
